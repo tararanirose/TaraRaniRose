@@ -1,0 +1,280 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0; 
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+} 
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	background:url(../images/background.jpg) center top fixed;
+}
+body {
+	background:url(../images/header-background.png) top repeat-x;
+}
+.container {
+	position:relative;
+	margin:auto;
+	width:860px;
+}
+.header {
+	height:194px;
+	width:860px;
+	background:url(../images/logo-background.png) top center no-repeat;
+	text-align:center;
+	position: relative;
+	margin: auto;
+}
+.nav {
+	position:absolute;
+	height:43px;
+	text-align:center;
+	z-index:100;
+	padding-left:190px;
+	top:136px;
+	left:0px;
+}
+.nav li {
+	float:left;
+	display:inline-block;
+	padding:0px 15px 0px 15px;
+	position:relative;
+}
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+	display:inline-block;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#FFFFFF;
+	font-weight:normal;
+	height:33px;
+	text-decoration:none;
+	padding:10px 15px 0px 15px;
+	font-size:18px;
+	background:url(../images/nav-hover.png) 0px 300px no-repeat;
+}
+.nav a:hover {
+	background:url(../images/nav-hover.png) 0px 0px repeat-x;
+}
+#home .home .navLink {
+	background:url(../images/nav-selected-1.png) left top no-repeat;
+	padding-left:30px;
+}
+#home .home {
+	background:url(../images/nav-selected-2.png) right top no-repeat;
+	padding-left:0px;
+}
+#treatments .treatments .navLink  {
+	background:url(../images/nav-selected-1.png) left top no-repeat;
+	padding-left:30px;
+}
+#treatments .treatments {
+	background:url(../images/nav-selected-2.png) right top no-repeat;
+	padding-left:0px;
+}
+#about .about .navLink  {
+	background:url(../images/nav-selected-1.png) left top no-repeat;
+	padding-left:30px;
+}
+#about .about {
+	background:url(../images/nav-selected-2.png) right top no-repeat;
+	padding-left:0px;
+}
+#brides .brides .navLink  {
+	background:url(../images/nav-selected-1.png) left top no-repeat;
+	padding-left:30px;
+}
+#brides .brides {
+	background:url(../images/nav-selected-2.png) right top no-repeat;
+	padding-left:0px;
+}
+.dropDown {
+position:absolute;
+display:none;
+margin-top:-4px;
+width:200px;
+padding:10px 0px;
+background:url(../images/dropdown-back.png) bottom no-repeat;
+top:43px;
+left:0px;
+}
+.treatments ul {
+margin-left:-25px;
+}
+#treatments .treatments ul {
+margin-left:-25px;
+}
+.nav li:hover ul {
+display:block;
+}
+
+.dropDown li {
+display:list-item;
+margin:0px 0px 0px 0px;
+padding:0px;
+}
+.dropDown a:link,
+.dropDown a:visited,
+.dropDown a:hover,
+.dropDown a:active {
+	display:block;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#FFFFFF;
+	font-weight:normal;
+	text-decoration:none;
+	font-size:14px;
+	font-style:italic;
+	text-align:left;
+	padding:6px 10px 4px 10px;
+	width:180px;
+	height:20px;
+	margin:0px;
+	background-image:none;
+}
+.dropDown a:hover {
+background-color:#ba212c;
+background-image:none;
+}
+.content {
+	margin-top:15px;
+	width:860px;
+}
+.contentWrapper {
+	width:820px;
+	background:url(../images/content-back-1.png) left top no-repeat;
+	padding:11px 20px 0px 20px;
+}
+.contentInner {
+	width:820px;
+	background:url(../images/content-back-2.png) left top repeat-y;
+	overflow:hidden;
+	min-height:250px;
+}
+.footer {
+	width:100%;
+	background:url(../images/footer.png) top center no-repeat;
+	padding-top:100px;
+	clear:both;
+	min-height:250px;
+}
+.leftContent {
+position:relative;
+float:left;
+width:510px;
+margin-left:30px;
+}
+.rightContent {
+position:relative;
+float:right;
+width:220px;
+margin-right:30px;
+padding-top:25px;
+}
+.rightContent img {
+	margin-bottom: 15px;
+}
+h1 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-style:italic;
+font-size:34px;
+font-weight:normal;
+color:#a21b25;
+margin:20px 0px 15px 0px;
+}
+p {
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#454545;
+line-height:22px;
+margin:20px 0px;
+}
+.standfirst {
+font-size: 16px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-style: italic;
+line-height: 24px;
+}
+#treatments h2 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:20px;
+font-weight:bold;
+margin:16px 0px 10px 0px;
+color:#498a58;
+border-top:1px solid #eeeeee;
+padding-top:15px;
+}
+#treatments p {
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#454545;
+line-height:21px;
+margin:10px 0px;
+}
+.price {
+float:right;
+display:inline;
+}
+.priceFrom {
+font-size:14px;
+}
+.detailsList {
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+padding-left:20px;
+color:#ba212c;
+}
+.detailsList li {
+list-style-type:disc;
+margin-bottom:4px;
+}
+.detailsList li span {
+color:#454545;
+}
