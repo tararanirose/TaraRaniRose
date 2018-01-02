@@ -15,7 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 title: Tara Rani Rose
 description: Mobile Beauty Scunthorpe
-baseurl: /TaraRaniRose
 
 # Build settings
 markdown: kramdown
